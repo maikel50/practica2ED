@@ -14,7 +14,8 @@ public class OperacionApp {
 	public void setArray(int[] array) {
 		this.array = array;
 	}
-	public void contarEdades(int [] array) {
+	public String contarEdades(int [] array) {
+		String resultado;
 		int c=0,c1=0,c2=0;
 		for(int i=0; i<array.length;i++) {
 			if(array[i] >=65) {
@@ -25,6 +26,6 @@ public class OperacionApp {
 				c2++;
 			}
 		}
-		System.out.println("Menores de edad " + c1 + " mayores de edad: " + c2 + " mayores de 65: " + c);
+		return resultado = "Menores de edad " + c1 + " mayores de edad: " + c2 + " mayores de 65: " + c;
 	}
 }
